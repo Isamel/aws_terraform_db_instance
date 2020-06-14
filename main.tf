@@ -4,7 +4,7 @@ resource "null_resource" "depends_on" {
     }
 }
 
-resource "aws_  " "db_instance_terraform" {
+resource "aws_db_instance" "db_instance_terraform" {
     count                 = var.db_instance_count
     depends_on            = [null_resource.depends_on]
     allocated_storage     = var.db_instance_allocated_storage

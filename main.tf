@@ -18,4 +18,5 @@ resource "aws_  " "db_instance_terraform" {
     password              = var.db_instance_password
     parameter_group_name  = var.db_instance_parameter_group_name
     multi_az              = var.db_instance_multi_az
+    tags                  = var.extra_tags
 }

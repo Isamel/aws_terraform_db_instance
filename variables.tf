@@ -23,6 +23,11 @@ variable "db_instance_engine" {
     description = "db instance engine."
 }
 
+variable "db_instance_storage_type" {
+    type        = string
+    description = "db instance storage type."
+}
+
 variable "db_instance_engine_version" {
     type        = string
     description = "db instance engine version."
